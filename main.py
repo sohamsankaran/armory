@@ -89,7 +89,7 @@ for rangebucket in gameprofile:
 			dperc[dbucket][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 			if rangebucket not in rangeperc:
 				rangeperc[rangebucket] = [0,0]
-			rangebucket[rangeperc][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+			rangeperc[rangebucket][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 			if gameprofile[rangebucket][dbucket][playerid]['efg'] <= efgwf:
 				total_bad_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 				playerperc[playerid][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
