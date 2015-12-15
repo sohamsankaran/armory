@@ -94,7 +94,7 @@ for rangebucket in gameprofile:
 				total_bad_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 				playerperc[playerid][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 				dperc[dbucket][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
-				rangebucket[rangeperc][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+				rangeperc[rangebucket][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 
 
 print float(total_bad_shots)/float(total_shots)
