@@ -1,6 +1,6 @@
 #Armory
 
-##A live NBA shot-selection evaluation and adjustment recommendation system
+####A live NBA shot-selection evaluation and adjustment recommendation system
 
 	usage: main.py [-h] [--season SEASON] [--gameid GAMEID] [--hv HV]
         	       [--fudge_factor FUDGE_FACTOR] [--min_usg_player MIN_USG_PLAYER]
