@@ -1,6 +1,8 @@
 import goldsberry
 import pandas as pd
 
+# old test script
+
 playerid = '201939'
 gameid = '0021500268'
 
