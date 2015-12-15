@@ -1,11 +1,18 @@
 import goldsberry
 import pandas as pd
 from playershotprofile import *
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--season', default="2015", type=str)
+parser.add_argument('--gameid', default="0021500259", type=str)
+parser.add_argument('--hv', default="home", type=str)
+args = parser.parse_args()
 
 #playerid = '201939'
-season = '2015'
-gameid = '0021500259'
-home_vis = 'vis'
+season = args.season
+gameid = args.gameid
+home_vis = args.hv
 fudge_factor = 0.0
 
 bucketref = {
