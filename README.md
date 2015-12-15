@@ -25,7 +25,7 @@ Armory is an automated shot-selection evaluator for basketball coaches to use du
 
 The system works by comparing the shots each player on the team is taking to efficiency rates for the same player in the same or similar situations in previous games in the season as well as in previous seasons, with a bias toward recency, and assigning an efficiency score to each of these shots. The program then attempts to ascertain which types of shots being taken in the game are least efficient, what said shots have in common, and what efficient shots are being underutilized, then turns that into actionable advice.
 
-Armory is written in python and is able run in realtime against any NBA game. To run it, refer to the usage guide above.
+Armory is written in python and is able to run in realtime against any NBA game. To run it, refer to the usage guide above.
 
 In theory, this system could be expanded to any basketball league, including high school and college, where enough information about each shot is maintained and available in realtime. This could be fed in manually to the system during play if tracking technology is not available.
 
