@@ -1,2 +1,3 @@
 pandas==0.17.1
 py-goldsberry==0.6.3.1
+requests==2.8.1
