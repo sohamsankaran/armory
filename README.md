@@ -2,6 +2,16 @@
 
 ####A live NBA shot-selection evaluation and adjustment recommendation system
 
+######Summary
+
+Armory is an automated shot-selection evaluator for basketball coaches to use during games. The idea is that coaches can run it at the end of each quarter of play to evaluate whether the shots their team is taking are efficient and how they can change their shot selection based on their historical efficiency, the shots the opposition seems to be allowing and the players they have available.
+
+######Authorship details
+
+This is a project by Soham Sankaran (sgs44) for Yale's CS 458 (Fall 2015).
+It wouldn't have been possible without the excellent py-goldsberry (https://github.com/bradleyfay/py-Goldsberry) by Bradley Fay and pandas (http://pandas.pydata.org/) by the pydata team.
+Mad props to Bill Simmons and Grantland (RIP) for inspiring my obsession with the NBA.
+
 ######Installation
 
 First, install pip if it isn't already installed. Then, execute the following command from inside the armory folder.
@@ -17,17 +27,27 @@ First, install pip if it isn't already installed. Then, execute the following co
 
 	optional arguments:
  			-h, --help            show this help message and exit
-  			--season SEASON
+  			--season SEASON (for example, 2015)
   			--gameid GAMEID
-  			--hv HV [home or vis]
-  			--fudge_factor FUDGE_FACTOR [between 0 and 1] 
-  			--min_usg_player MIN_USG_PLAYER [between 0 and 1]
-  			--min_usg_dbucket MIN_USG_DBUCKET [between 0 and 1]
-  			--min_usg_range MIN_USG_RANGE [between 0 and 1]
+  			--hv HV (home or vis)
+  			--fudge_factor FUDGE_FACTOR (between 0 and 1)
+  			--min_usg_player MIN_USG_PLAYER (between 0 and 1)
+  			--min_usg_dbucket MIN_USG_DBUCKET (between 0 and 1)
+  			--min_usg_range MIN_USG_RANGE (between 0 and 1)
+  			
+gameids can be obtained from http://stats.nba.com, and current live game ids can be obtained by running the following command:
 
-######Summary
+	python livegames.py
 
-Armory is an automated shot-selection evaluator for basketball coaches to use during games. The idea is that coaches can run it at the end of each quarter of play to evaluate whether the shots their team is taking are efficient and how they can change their shot selection based on their historical efficiency, the shots the opposition seems to be allowing and the players they have available.
+hv is to choose between the home(home) and visitor(vis) teams.
+
+fudge_factor is the percentage difference betwen the effective field goal percentage in wins and the effective field goal of a shot in the past allowed for 
+
+min_usg_player is the minimum percentage of the team's shots a player needs to take before he is considered for most or least efficient player.
+
+min_usg_dbucket is the minimum percentage of shots within a certain defender classification required for that classification to be considered as the best or worst.
+
+min_usg_range is the same as the above but for shot range classification.
 
 ######Motivation
 
