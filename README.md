@@ -45,7 +45,9 @@ Armory is written in python and is able to run in realtime against any NBA game.
 
 In theory, this system could be expanded to any basketball league, including high school and college, where enough information about each shot is maintained and available in realtime. This could be fed in manually to the system during play if tracking technology is not available.
 
-Test Inputs:
+######Testing
+
+Sample Test Inputs:
 
 	python main.py --gameid 0021500160 --hv vis
 	python main.py --gameid 0021500359
