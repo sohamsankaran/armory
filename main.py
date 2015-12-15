@@ -1,3 +1,4 @@
+
 import goldsberry
 import pandas as pd
 from playershotprofile import *
@@ -72,11 +73,25 @@ efgwf = efgw + fudge_factor
 total_bad_shots = 0
 total_shots = 0
 
+playerperc = {}
+dperc = {}
+rangeperc = {}
+
 for rangebucket in gameprofile:
 	for dbucket in gameprofile[rangebucket]:
 		for playerid in gameprofile[rangebucket][dbucket]:
 			total_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+			if playerid not in playerperc:
+                playerperc[playerid] = [0,0]
+            playerperc[playerid][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+            if dbucket not in dperc:
+                dperc[dbucket] = [0,0]
+            dperc[dbucket][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+            if rangebucket not in rangeperc:
+                rangeperc[rangebucket] = [0,0]
+            rangebucket[rangeperc][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 			if gameprofile[rangebucket][dbucket][playerid]['efg'] <= efgwf:
 				total_bad_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+
 
 print float(total_bad_shots)/float(total_shots)
