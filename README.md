@@ -41,7 +41,7 @@ gameids can be obtained from http://stats.nba.com, and current live game ids can
 
 hv is to choose between the home(home) and visitor(vis) teams.
 
-fudge_factor is the percentage difference betwen the effective field goal percentage in wins and the effective field goal of a shot in the past allowed for 
+fudge_factor is the percentage difference betwen the effective field goal percentage in wins and the effective field goal of a shot in the past allowed for a shot to be classified as good.
 
 min_usg_player is the minimum percentage of the team's shots a player needs to take before he is considered for most or least efficient player.
 
