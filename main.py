@@ -82,16 +82,19 @@ for rangebucket in gameprofile:
 		for playerid in gameprofile[rangebucket][dbucket]:
 			total_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 			if playerid not in playerperc:
-                playerperc[playerid] = [0,0]
-            playerperc[playerid][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
-            if dbucket not in dperc:
-                dperc[dbucket] = [0,0]
-            dperc[dbucket][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
-            if rangebucket not in rangeperc:
-                rangeperc[rangebucket] = [0,0]
-            rangebucket[rangeperc][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+				playerperc[playerid] = [0,0]
+			playerperc[playerid][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+			if dbucket not in dperc:
+				dperc[dbucket] = [0,0]
+			dperc[dbucket][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+			if rangebucket not in rangeperc:
+				rangeperc[rangebucket] = [0,0]
+			rangebucket[rangeperc][1] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 			if gameprofile[rangebucket][dbucket][playerid]['efg'] <= efgwf:
 				total_bad_shots += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+				playerperc[playerid][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+				dperc[dbucket][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
+				rangebucket[rangeperc][0] += gameprofile[rangebucket][dbucket][playerid]['total_shots']
 
 
 print float(total_bad_shots)/float(total_shots)
