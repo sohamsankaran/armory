@@ -6,6 +6,8 @@
 
 Armory is an automated shot-selection evaluator for basketball coaches to use during games. The idea is that coaches can run it at the end of each quarter of play to evaluate whether the shots their team is taking are efficient and how they can change their shot selection based on their historical efficiency, the shots the opposition seems to be allowing and the players they have available.
 
+Armory returns advice about shot selection to the coach (i.e. the person running armory) in plain English.
+
 ######Authorship details
 
 This is a project by Soham Sankaran (sgs44) for Yale's CS 458 (Fall 2015).
@@ -14,7 +16,11 @@ Mad props to Bill Simmons and Grantland (RIP) for inspiring my obsession with th
 
 ######Installation
 
-First, install pip if it isn't already installed. Then, execute the following command from inside the armory folder.
+First, install git and pip if they aren't already installed. Next, if you haven't already, download armory as such:
+
+	git clone https://github.com/sohamsankaran/armory.git
+
+Next, navigate to the armory directory. Finally, execute the following command from inside the armory folder.
 
 	pip install -r requirements.txt
 
@@ -39,7 +45,7 @@ gameids can be obtained from http://stats.nba.com, and current live game ids can
 
 	python livegames.py
 
-hv is to choose between the home(home) and visitor(vis) teams.
+hv is to choose between running as the home(home) and visitor(vis) teams for a game.
 
 fudge_factor is the percentage difference betwen the effective field goal percentage in wins and the effective field goal of a shot in the past allowed for a shot to be classified as good.
 
@@ -48,6 +54,8 @@ min_usg_player is the minimum percentage of the team's shots a player needs to t
 min_usg_dbucket is the minimum percentage of shots within a certain defender classification required for that classification to be considered as the best or worst.
 
 min_usg_range is the same as the above but for shot range classification.
+
+Note that armory requires an active internet connection to run.
 
 ######Motivation
 
