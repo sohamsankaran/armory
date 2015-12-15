@@ -10,7 +10,8 @@ Armory returns advice about shot selection to the coach (i.e. the person running
 
 ######Authorship details
 
-This is a project by Soham Sankaran (sgs44) for Yale's CS 458 (Fall 2015).
+This is a project by Soham Sankaran (sgs44) for Yale's CS 458 (Fall 2015).  
+  
 Github URL: https://github.com/sohamsankaran/armory/
 
 Armory wouldn't have been possible without the excellent py-goldsberry (https://github.com/bradleyfay/py-Goldsberry) by Bradley Fay and pandas (http://pandas.pydata.org/) by the pydata team.
