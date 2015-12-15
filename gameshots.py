@@ -46,7 +46,7 @@ for playerid in visitor_list:
 #print shotdb
 #print list(shotdb.columns.values)
 #print gdat
-#print home_players
+#print list(home_players.columns.values)
 #print visitor_players
 
 print hshotlog
