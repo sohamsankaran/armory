@@ -19,7 +19,7 @@ Mad props to Bill Simmons and Grantland (RIP) for inspiring my obsession with th
 
 ######Installation
 
-First, install git and pip if they aren't already installed. Next, if you haven't already, download armory as such:
+First, install git, python-dev|python-devel and pip if they aren't already installed. Next, if you haven't already, download armory as such:
 
 	git clone https://github.com/sohamsankaran/armory.git
 
