@@ -1,3 +1,5 @@
-pandas==0.17.1
-py-goldsberry==0.6.3.1
-requests==2.8.1
+pandas>=0.17.1
+py-goldsberry>=0.6.3.1
+requests>=2.8.1
+python-dateutil>=2.4.2
+
