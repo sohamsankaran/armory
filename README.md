@@ -25,7 +25,7 @@ First, install git, python-dev|python-devel and pip if they aren't already insta
 
 Next, navigate to the armory directory. Finally, execute the following command from inside the armory folder.
 
-	pip install -r requirements.txt
+	cat requirements.txt | xargs -n 1 pip install
 
 ######Usage
 
