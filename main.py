@@ -131,6 +131,10 @@ pclk = sorted(pcperc, key=lambda x: x[1])
 dclk = sorted(dcperc, key=lambda x: x[1])
 rclk = sorted(rcperc, key=lambda x: x[1])
 
+if total_shots == 0:
+	print "Shot logs not posted for this game yet. Please wait till Halftime or the end of the game."
+	exit()
+
 t_perc = (float(total_bad_shots)/float(total_shots))
 
 rcd = {'layup':'layups', 'long2':'long two-point shots', 'shortmid':'midrange two-pointers', 'outside':'three-point shots'}
